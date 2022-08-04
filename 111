@@ -1,0 +1,128 @@
+.footer-section {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.logo-footer {
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-bottom: 20px;
+}
+
+address {
+    color:#FFFFFF;
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.contacts-link-footer {
+    display: block;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+}
+
+.tel {
+    margin-bottom: 0;
+}
+
+.social-footer {
+    margin-left: 70px;
+}
+
+.social-footer-h {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.social-footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    margin: 12px;
+}
+
+.social-footer-icon-div {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-footer-icon-a:hover .social-footer-icon-div{
+    background: var(--active-link-color);
+}
+
+.social-footer-icon-list .item-snet + .item-snet {
+    margin-left: 10px;
+}
+
+.footer-form {
+    margin-left: 93px;
+}
+
+.footer-form input {
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: #2F303A;
+    color: #ffffff;
+}
+
+.footer-form-label {
+    display: block;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.footer-form-button {
+    height: 50px;
+    width: 200px;
+    border: 0;
+    margin-left: 12px;
+    
+    color: #ffffff;
+    background-color: var(--active-link-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 1.88;
+}
+
+.footer-form-icon {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+
+    fill: #ffffff;
+}

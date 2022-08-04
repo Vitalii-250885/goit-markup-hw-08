@@ -1,9 +1,10 @@
 .form__header {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    // line-height: 1.15;
     text-align: center;
-    letter-spacing: 0.03em;
+    // letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 12px;
 
@@ -11,8 +12,8 @@
 }
 
 .form {
-    width: 530px;
-    height: 580px;
+    width: 450px;
+    // height: 580px;
     padding: 40px;
 }
 
@@ -92,19 +93,37 @@
 }
 
 .footer-form {
-    margin-left: 93px;
+    @media screen and (min-width: $desktop) {
+        margin-left: 93px;
+    }
 }
 
 .footer-form__input {
+    
     height: 50px;
-    width: 358px;
+    width: 450px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: #2F303A;
     color: #ffffff;
+
+    @media screen and (min-width: $mobile) {
+        display: block;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: inline-block;
+        height: 50px;
+        width: 358px;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .footer-form__label {

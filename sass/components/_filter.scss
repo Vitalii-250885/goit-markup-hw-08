@@ -1,11 +1,14 @@
 .filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 40px;
+    width: 326px;
 }
 
 .filter-list__item {
     margin-right: 8px;
+    margin-bottom: 8px;
 
     &:last-child {
         margin-right: 0;

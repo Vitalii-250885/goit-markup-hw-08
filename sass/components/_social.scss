@@ -41,13 +41,21 @@
 }
 
 .social-footer {
-    margin-left: 70px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 70px;
+        margin-bottom: 0;
+    }
 }
 
 .social-footer__heder {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.17;
     color: #ffffff;
     text-transform: uppercase;
     margin-top: 0;

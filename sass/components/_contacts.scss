@@ -1,45 +1,77 @@
 .contacts__icon {
     fill: $primary-color;
     vertical-align: middle;
-    margin-right: 10px;
-
+    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .contacts__link:hover &,
     .contacts__link:focus & {
         fill: $active-color;
     }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 10px;
+    }
 }
 
 .mail {
     height: 12px;
     width: 16px;
+
+    @media screen and (min-width: $tablet) {
+        height: 10px;
+        width: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 12px;
+        width: 16px;
+    }
 }
 
 .phone {
     height: 16px;
     width: 10px;
+
+    @media screen and (min-width: $tablet) {
+        height: 14px;
+        width: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        height: 16px;
+        width: 10px;
+    }
 }
 
 .contacts {
-    display: flex;
+    // position: absolute;
+    display: none;
     margin-left: auto;
     vertical-align: middle;
-}
 
-.contacts__item {
-    margin-right: 50px;
+    @media screen and (min-width: $tablet) {
+        display: block;
+    }
 
-    &:last-child {
-        margin-right: 0;
+    @media screen and (min-width: $desktop) {
+        display: flex;
     }
 }
+
+// .contacts__item {
+//     margin-bottom: 10px;
+
+//     &:last-child {
+//         margin-bottom: 0;
+//     }
+// }
 
 .contacts__link {
     display: block;
     margin-top: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 21px;
+    padding-bottom: 21px;
    
     color: $primary-color;
     font-weight: 500;
@@ -51,5 +83,30 @@
     &:hover,
     &:focus {
         color: $active-color
+    }
+
+    &-mail {
+        padding-bottom: 5px;
+
+        @media screen and (min-width: $desktop) {
+            padding: 32px 0;
+        }    
+    }
+
+    &-phone {
+        padding-top: 5px;
+
+        @media screen and (min-width: $desktop) {
+            padding: 32px 0;
+            margin-left: 30px;
+        }  
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
     }
 }

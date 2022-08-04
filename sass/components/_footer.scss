@@ -1,23 +1,54 @@
 .footer {
     background-color: $footer-bgcolor;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
 }
 
 .footer-content {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+.footer__contacts {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
 }
 
 address {
     color:#FFFFFF;
     font-style: normal;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
+        width: 230px;
+    }
 }
 
 .footer-content__link {
     display: block;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 9px;
+    }
 }
 
 .tel {

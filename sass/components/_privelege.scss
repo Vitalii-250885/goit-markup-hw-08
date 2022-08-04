@@ -1,5 +1,6 @@
 .privelege {
-    padding-top: 94px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
 }
 
 .privelege__header {
@@ -7,28 +8,60 @@
 }
 
 .privelege__object {
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-color: $secondary-bgcolor;
     border-radius: 4px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
+    }
 }
 
 .privelege__icon {
     width: 70px;
     height: 70px;
-    margin: 25px 100px;
+    margin: 25px 190px;
+
+    @media screen and (min-width: $tablet) {
+        margin: 25px 142px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin: 25px 100px;
+    }
 }
 
 .privelege__list {
-    display: flex;
+    display: block;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .privelege__item {
-    margin-right: 30px;
+
+    margin-bottom: 30px;
 
     &:last-child {
-        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin: 15px;
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 270px;
     }
 }
 
@@ -36,12 +69,17 @@
     font-size: 14px;
     color: $secondary-color;
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.17;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }
 }
 
 .privelege__description {
-    width: 270px;
+    // width: 270px;
 }
