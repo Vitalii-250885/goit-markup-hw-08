@@ -15,10 +15,6 @@
     }
 }
 
-.site-nav__mobile {
-    display: inline-flex;
-}
-
 .heder__container {
     height: 60px;
     display: flex;
@@ -26,8 +22,8 @@
     padding-bottom: 0;
     align-items: center;
 
-    @media screen and (min-width: $mobile) {
-        justify-content: left;
+    @media screen and (max-width: $tablet) {
+        justify-content: space-between;
     }
     
 }
