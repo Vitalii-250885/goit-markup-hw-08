@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     justify-content: left;
     margin-bottom: 40px;
-    width: 326px;
+    width: 100%;
+    max-width: 326px;
 
     @media screen and (min-width: $tablet) {
         width: 100%;
