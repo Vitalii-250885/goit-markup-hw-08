@@ -93,3 +93,25 @@
         margin-right: 0;
     }
 }
+
+.social-mobile__list {
+    display: flex;
+
+    
+}
+
+.social-mobile__item {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:last-child {
+        border-right: none;
+    }
+}
+
+.social-mobail__link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    color: $active-color;
+    padding: 0 10px;
+}

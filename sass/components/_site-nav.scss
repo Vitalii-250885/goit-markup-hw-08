@@ -1,40 +1,59 @@
 .page-header {
     position: relative;
+
+    @media screen and (min-width: $tablet) {
+        position: static;
+    }
 }
 
 .menu {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
         position: static;
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
     }
 }
 
 .site-nav__container {
-    position: absolute;
-    display: none;
-    top: 48px;
-    left: 0;
-    width: 100%;
-    min-height: 796px;
-    background-color: #ffffff;
-    padding: 40px;
-   
-    &.is-open {
-        display: block;
-    }
+  
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        z-index: 1;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 796px;
+        background-color: #ffffff;
+        padding: 40px;
+        
+
+        &.is-open {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        } 
+    } 
 
     @media screen and (min-width: $tablet) {
         display: flex;
         position: static;
+        flex-grow: 1;
+        justify-content: space-between;
     } 
 }
 
 .site-nav {
-    width: 100%;
-    height: 100%; 
 
+    @media screen and (max-width: 767px) {
+        flex-grow: 1;
+    } 
+    
     @media screen and (min-width: $tablet) {
-        display: flex;
         position: static;
+        display: flex;
     } 
 }
 
@@ -56,12 +75,15 @@
 }
 
 .site-nav__link {
-    display: block;
     color: $secondary-color;
-    font-size: 40px;
     font-weight: 500;
-    line-height: 1.17;
     letter-spacing: 0.02em;
+ 
+    @media screen and (max-width: 767px) {
+        display: block;
+        font-size: 40px;
+        line-height: 1.17;
+    } 
     
 
     // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,9 +93,9 @@
     //     color: $active-color
     // }
 
-    // &--active {
-    //     color: $active-color;
-    // }
+    &--active {
+        color: $active-color;
+    }
 
     // &--active::after {
     //     content: '';
@@ -87,11 +109,9 @@
     // }
 
     @media screen and (min-width: $tablet) {
-        display: block;
+        display: flex;
         color: $secondary-color;
-        font-weight: 500;
         line-height: 1.14;
-        letter-spacing: 0.02em;
         padding-top: 30px;
         padding-bottom: 30px;
     
