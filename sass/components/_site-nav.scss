@@ -8,14 +8,6 @@
     }
 }
 
-.header__mobile-menu {
-    display: none;
-
-    @media screen and (max-width: 767px) {
-        display: block;
-    }
-}
-
 .site-nav__item {
     margin-right: 50px;
 

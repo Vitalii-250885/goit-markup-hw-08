@@ -15,6 +15,10 @@
     }
 }
 
+.site-nav__mobile {
+    display: inline-flex;
+}
+
 .heder__container {
     height: 60px;
     display: flex;
@@ -23,7 +27,7 @@
     align-items: center;
 
     @media screen and (min-width: $mobile) {
-        justify-content: space-between;
+        justify-content: left;
     }
     
 }

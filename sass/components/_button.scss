@@ -1,5 +1,5 @@
 .button__menu {
-    display: inline-flex;
+    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0;
@@ -8,25 +8,21 @@
     width: 40px;
     height: 40px;
 
-    & .icon-close {
-        display: none;
-    }
+    // & .icon-close {
+    //     display: none;
+    // }
 
-    &.is-open .icon-close {
-        display: block;
-    }
+    // &.is-open .icon-close {
+    //     display: block;
+    // }
 
-    &.is-open .icon-menu {
-        display: none;
-    }
+    // &.is-open .icon-menu {
+    //     display: none;
+    // }
 
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-
-    @media screen and (min-width: $desktop) {
-        display: none;
-    }
+    // @media screen and (min-width: 767px) {
+    //     display: none;
+    // }
 }
 
 

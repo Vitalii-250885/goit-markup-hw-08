@@ -42,6 +42,12 @@ p {
   }
 }
 
+.site-nav__mobile {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .heder__container {
   height: 60px;
   display: -webkit-box;
@@ -55,9 +61,9 @@ p {
 }
 @media screen and (min-width: 480px) {
   .heder__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
@@ -78,15 +84,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-.header__mobile-menu {
-  display: none;
-}
-@media screen and (max-width: 767px) {
-  .header__mobile-menu {
-    display: block;
   }
 }
 
@@ -348,9 +345,7 @@ p {
 }
 
 .button__menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 0;
@@ -358,25 +353,6 @@ p {
   background-color: transparent;
   width: 40px;
   height: 40px;
-}
-.button__menu .icon-close {
-  display: none;
-}
-.button__menu.is-open .icon-close {
-  display: block;
-}
-.button__menu.is-open .icon-menu {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .button__menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .button__menu {
-    display: none;
-  }
 }
 
 .hero__button {
