@@ -1,8 +1,17 @@
 .portfolio-list {
     display: block;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 .portfolio-list__item {
@@ -23,6 +32,10 @@
     @media screen and (min-width: $tablet) {
         width: 354px;
     }
+
+    @media screen and (min-width: $desktop) {
+        width: 370px;
+    }
 }
 
 .portfolio-list__card {
@@ -33,6 +46,14 @@
 
 .portfolio-img {
     width: 450px;
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 370px;
+    }
 }
 
 .portfolio-list__overlay {
@@ -54,6 +75,14 @@
     .portfolio-list__item:hover &,
     .portfolio-list__link:focus & {
         transform: translateY(0);
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 370px;
     }
 }
 

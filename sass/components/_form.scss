@@ -2,19 +2,26 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
-    // line-height: 1.15;
     text-align: center;
-    // letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 12px;
 
     color: $secondary-color;
+
+    @media screen and (min-width: $desktop) {
+        line-height: 1.15;
+    }
 }
 
 .form {
     width: 450px;
     // height: 580px;
     padding: 40px;
+
+    @media screen and (min-width: $desktop) {
+        height: 581px;
+        width: 528px;
+    }
 }
 
 .form__icon {
@@ -93,8 +100,9 @@
 }
 
 .footer-form {
+    
     @media screen and (min-width: $desktop) {
-        margin-left: 93px;
+        margin-left: 90px;
     }
 }
 
@@ -119,10 +127,10 @@
 
     @media screen and (min-width: $desktop) {
         display: inline-block;
-        height: 50px;
         width: 358px;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -141,7 +149,6 @@
     height: 50px;
     width: 200px;
     border: 0;
-    margin-left: 12px;
     
     color: #ffffff;
     background-color: $active-color;
@@ -153,6 +160,10 @@
     font-size: 16px;
     letter-spacing: 0.06em;
     line-height: 1.88;
+
+    @media screen and (min-width: $desktop) {
+        margin-left: 12px;
+    }
 }
 
 .footer-form__icon {

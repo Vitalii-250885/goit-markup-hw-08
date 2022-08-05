@@ -1,7 +1,5 @@
 .footer {
     background-color: $footer-bgcolor;
-    // padding-top: 60px;
-    // padding-bottom: 60px;
     text-align: center;
 
     @media screen and (min-width: $desktop) {
@@ -14,6 +12,8 @@
 
     @media screen and (min-width: $desktop) {
         display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -27,6 +27,7 @@
 
     @media screen and (min-width: $desktop) {
         display: flex;
+        margin-bottom: 0;
     }
 }
 

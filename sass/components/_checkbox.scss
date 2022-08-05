@@ -6,6 +6,10 @@
 .checkbox__link {
     color: $active-color;
     font-size: 12px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
 }
 
 .checkbox__input {
@@ -43,4 +47,8 @@
 .checkbox__text {
     margin-left: 8px;
     font-size: 12px;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
 }

@@ -4,13 +4,6 @@
     margin-right: auto;
     padding: 60px 15px;
 
-    
-    outline: 1px solid tomato;
-
-    // @media screen and (min-width: $mobile) {
-    //     width: $mobile;
-    // }
-
     @media screen and (min-width: $tablet) {
         width: $tablet;
         padding: 60px 15px;
@@ -23,12 +16,15 @@
 }
 
 .heder__container {
-    // height: 60px;
+    height: 60px;
     display: flex;
     padding-top: 0;
     padding-bottom: 0;
-    // align-items: center;
-    // justify-content: flex-end;
+    align-items: center;
+
+    @media screen and (min-width: $mobile) {
+        justify-content: space-between;
+    }
     
 }
 
