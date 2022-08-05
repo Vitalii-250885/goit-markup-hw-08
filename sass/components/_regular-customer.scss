@@ -45,7 +45,8 @@
         width: 170px;
     }
 
-    .regular-customer__link:hover & {
+    .regular-customer__link:hover &,
+    .regular-customer__link:focus & {
         border-color: $active-color;
     }
 }
@@ -58,7 +59,8 @@
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .regular-customer__link:hover & {
+    .regular-customer__link:hover &,
+    .regular-customer__link:focus & {
         fill: $active-color;
     }
 
