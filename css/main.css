@@ -5,7 +5,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
-  width: 100%;
 }
 
 p {
@@ -30,6 +29,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding: 60px 15px;
+  outline: 1px solid tomato;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -62,14 +62,29 @@ p {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) {
+  .heder__container {
+    width: 768px;
+  }
+}
 
 .hero__container {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 768px) {
+  .hero__container {
+    width: 768px;
+  }
+}
 
 .direction__container {
   padding-top: 25px;
+}
+@media screen and (min-width: 768px) {
+  .direction__container {
+    width: 768px;
+  }
 }
 
 .page-header {
@@ -1265,6 +1280,11 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .social-mobile__list {
+    display: none;
+  }
 }
 
 .social-mobile__item {

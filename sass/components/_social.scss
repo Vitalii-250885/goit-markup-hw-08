@@ -97,7 +97,9 @@
 .social-mobile__list {
     display: flex;
 
-    
+    @media screen and (min-width: $tablet) {
+        display: none;
+    } 
 }
 
 .social-mobile__item {

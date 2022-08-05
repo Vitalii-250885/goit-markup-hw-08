@@ -5,6 +5,8 @@
     margin-right: auto;
     padding: 60px 15px;
 
+    outline: 1px solid tomato;
+
     @media screen and (min-width: $tablet) {
         width: $tablet;
         padding: 60px 15px;
@@ -26,14 +28,26 @@
     @media screen and (max-width: $tablet) {
         justify-content: space-between;
     }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
     
 }
 
 .hero__container {
     padding-top: 118px;
     padding-bottom: 118px;
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
 }
 
 .direction__container {
     padding-top: 25px;
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
 }
