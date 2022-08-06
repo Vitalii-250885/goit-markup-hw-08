@@ -8,6 +8,9 @@
 }
 
 .privelege__object {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     max-width: 450px;
@@ -27,21 +30,8 @@
 
 .privelege__icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    // margin: 25px 190px;
-
-    
-
-    // @media screen and (min-width: $desktop) {
-    //     margin: 25px 100px;
-    // }
 }
 
 .privelege__list {

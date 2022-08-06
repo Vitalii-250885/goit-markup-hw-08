@@ -30,9 +30,12 @@
 }
 
 .regular-customer__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid $primary-icon-color;
     border-radius: 4px;
-    max-width: 210px;
+    width: 210px;
     height: 92px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -44,12 +47,12 @@
     @media screen and (min-width: $desktop) {
         width: 170px;
     }
+}
 
-    .regular-customer__link:hover &,
-    .regular-customer__link:focus & {
+.regular-customer__link:hover,
+.regular-customer__link:focus {
         border-color: $active-color;
     }
-}
 
 .regular-customer__icon {
     width: 106px;
@@ -61,10 +64,6 @@
     .regular-customer__link:hover &,
     .regular-customer__link:focus & {
         fill: $active-color;
-    }
-
-    @media screen and (min-width: $desktop) {
-        margin: 16px 32px;
     }
 }
 
