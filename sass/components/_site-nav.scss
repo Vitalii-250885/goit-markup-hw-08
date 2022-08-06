@@ -65,6 +65,7 @@
     }
 
     @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
         margin-right: 50px;
 
         &:last-child {

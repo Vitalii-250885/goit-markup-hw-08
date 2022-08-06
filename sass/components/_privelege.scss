@@ -37,13 +37,11 @@
     margin-right: auto;
     // margin: 25px 190px;
 
-    @media screen and (min-width: $tablet) {
-        margin: 25px 142px;
-    }
+    
 
-    @media screen and (min-width: $desktop) {
-        margin: 25px 100px;
-    }
+    // @media screen and (min-width: $desktop) {
+    //     margin: 25px 100px;
+    // }
 }
 
 .privelege__list {
