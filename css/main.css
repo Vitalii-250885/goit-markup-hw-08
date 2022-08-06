@@ -12,6 +12,12 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   margin-top: 0;
@@ -45,6 +51,7 @@ p {
 }
 
 .heder__container {
+  position: relative;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,7 +440,12 @@ p {
 }
 
 .hero {
+  position: relative;
   background-color: #2F303A;
+  background-image: url(../images/hero-Img@1x-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 400px;
   width: 100%;
   max-width: 480px;
@@ -448,26 +460,39 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    position: relative;
-    background-image: url(../images/hero-bgimg-min.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     width: 100%;
     max-width: 1600px;
     height: 600px;
   }
 }
 
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.4);
+}
+@media screen and (min-width: 480px) {
+  .hero__overlay {
+    height: 400px;
+    width: 100%;
+    max-width: 480px;
+    background: rgba(47, 48, 58, 0.4);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    height: 400px;
+    width: 100%;
+    max-width: 768px;
+    background: rgba(47, 48, 58, 0.4);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 600px;
     width: 100%;
     max-width: 1600px;
-    padding-top: 200px;
     background: rgba(47, 48, 58, 0.4);
   }
 }

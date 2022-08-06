@@ -1,5 +1,10 @@
 .hero {
+    position: relative;
     background-color: #2F303A;
+    background-image: url(../images/hero-Img@1x-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 400px;
     width: 100%;
     max-width: 480px;
@@ -7,16 +12,12 @@
     margin-right: auto;
 
     @media screen and (min-width: $tablet) {
+        
         max-width: none;
         width: $tablet;
     }
 
     @media screen and (min-width: $desktop) {
-        position: relative;
-        background-image: url(../images/hero-bgimg-min.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
         width: 100%;
         max-width: 1600px;
         height: 600px;
@@ -24,14 +25,29 @@
 }
 
 .hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(47, 48, 58, 0.4);
+
+    @media screen and (min-width: $mobile) {
+        height: 400px;
+        width: 100%;
+        max-width: 480px;
+        background: rgba(47, 48, 58, 0.4);
+    } 
+
+    @media screen and (min-width: $tablet) {
+        height: 400px;
+        width: 100%;
+        max-width: 768px;
+        background: rgba(47, 48, 58, 0.4);
+    } 
+
     @media screen and (min-width: $desktop) {
-        position: absolute;
-        top: 0;
-        left: 0;
         height: 600px;
         width: 100%;
         max-width: 1600px;
-        padding-top: 200px;
         background: rgba(47, 48, 58, 0.4);
     } 
 }
