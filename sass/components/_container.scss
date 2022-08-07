@@ -23,14 +23,15 @@
     padding-top: 0;
     padding-bottom: 0;
     align-items: center;
+    height: 60px;
 
-    @media screen and (max-width: $tablet) {
-        // height: 60px;
+    @media screen and (max-width: 767px) {
+        height: 60px;
         justify-content: space-between;
     }    
 
-    @media screen and (max-width: $desktop) {
-        // height: 80px;
+    @media screen and (min-width: $tablet) {
+        height: 80px;
         
     }
 }
