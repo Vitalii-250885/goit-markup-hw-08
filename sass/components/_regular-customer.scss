@@ -28,6 +28,7 @@
     border-radius: 4px;
     width: 210px;
     height: 92px;
+    margin: 15px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -59,9 +60,14 @@
 }
 
 .regular-customer__item {
-    margin-right: 30px;
+    
+    @media screen and (min-width: $tablet) {
+        margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0;
+        &:last-child {
+            margin-right: 0;
     }
+    }
+
+    
 }

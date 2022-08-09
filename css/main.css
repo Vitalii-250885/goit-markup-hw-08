@@ -1364,6 +1364,7 @@ img {
   border-radius: 4px;
   width: 210px;
   height: 92px;
+  margin: 15px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1394,22 +1395,24 @@ img {
   fill: #2196F3;
 }
 
-.regular-customer__item {
-  margin-right: 30px;
-}
-.regular-customer__item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .regular-customer__item {
+    margin-right: 30px;
+  }
+  .regular-customer__item:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer {
   background-color: #2F303A;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer {
     text-align: left;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
