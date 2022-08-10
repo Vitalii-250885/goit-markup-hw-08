@@ -12,7 +12,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   section {
-    padding: 94px 0x;
+    padding: 94px 0;
   }
 }
 
@@ -49,13 +49,11 @@ img {
   .container {
     max-width: none;
     width: 768px;
-    padding: 0 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding: 0 15px;
   }
 }
 
@@ -103,6 +101,11 @@ img {
 
 .direction__container {
   padding-top: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .direction__container {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -591,9 +594,6 @@ img {
 }
 
 .close-button__icon {
-  position: absolute;
-  top: 8px;
-  right: 8px;
   height: 30px;
   width: 30px;
   border: solid 1px rgba(0, 0, 0, 0.1);
@@ -608,6 +608,9 @@ img {
 }
 
 .close-button {
+  position: absolute;
+  top: 8px;
+  right: 38px;
   border: 0;
   cursor: pointer;
   margin: 0;
@@ -671,22 +674,21 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  min-height: 610px;
   min-width: 450px;
   border-radius: 4px;
   background: #ffffff;
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    min-height: 581px;
-    min-width: 528px;
+    min-width: 0;
+    width: 528px;
   }
 }
 
 .form__header {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.17;
   text-align: center;
   margin-top: 0;
   margin-bottom: 12px;
@@ -704,8 +706,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .form {
-    height: 581px;
-    width: 528px;
+    width: 100%;
   }
 }
 
@@ -754,6 +755,7 @@ img {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .form__input {
@@ -886,6 +888,7 @@ img {
 @media screen and (min-width: 1200px) {
   .checkbox__link {
     font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -933,7 +936,12 @@ img {
 @media screen and (min-width: 1200px) {
   .checkbox__text {
     font-size: 14px;
+    line-height: 1.71;
   }
+}
+
+.privelege {
+  outline: 1px solid tomato;
 }
 
 .privelege__header {
@@ -988,6 +996,12 @@ img {
     margin: -15px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .privelege__list {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
 
 .privelege__item {
   margin-bottom: 30px;
@@ -1031,6 +1045,7 @@ img {
 @media screen and (min-width: 1200px) {
   .direction {
     display: block;
+    padding-top: 25px;
   }
 }
 
@@ -1349,6 +1364,11 @@ img {
           justify-content: center;
   margin: -15px;
 }
+@media screen and (min-width: 1200px) {
+  .regular-customer__list {
+    margin: 0;
+  }
+}
 
 .regular-customer__link {
   display: -webkit-box;
@@ -1480,6 +1500,12 @@ address {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__mobile-contacts {
+    margin-bottom: 60px;
+  }
+}
+
 .site-header-portfolio {
   border-bottom: 1px solid #ECECEC;
 }
@@ -1545,7 +1571,6 @@ address {
 }
 
 .portfolio-list__card {
-  height: 294px;
   position: relative;
   overflow: hidden;
 }
@@ -1592,11 +1617,13 @@ address {
 @media screen and (min-width: 768px) {
   .portfolio-list__overlay {
     width: 354px;
+    height: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-list__overlay {
     width: 370px;
+    height: 370px;
   }
 }
 

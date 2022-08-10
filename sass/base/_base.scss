@@ -8,10 +8,11 @@ body {
 }
 
 section {
+    
     padding: 60px 0;
 
     @media screen and (min-width: $desktop) {
-        padding: 94px 0x;
+        padding: 94px 0;
     }
 }
 

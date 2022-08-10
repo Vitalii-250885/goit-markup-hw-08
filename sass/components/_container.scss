@@ -8,12 +8,10 @@
     @media screen and (min-width: $tablet) {
         max-width: none;
         width: $tablet;
-        padding: 0 15px;
     }
 
     @media screen and (min-width: $desktop) {
         width: $desktop;
-        padding: 0 15px;
     }
 }
 
@@ -52,4 +50,8 @@
 
 .direction__container {
     padding-top: 25px;
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 0;
+    }
 }

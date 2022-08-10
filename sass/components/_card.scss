@@ -40,7 +40,6 @@
 }
 
 .portfolio-list__card {
-    height: 294px;
     position: relative;
     overflow: hidden;
 }
@@ -82,10 +81,12 @@
 
     @media screen and (min-width: $tablet) {
         width: 354px;
+        height: 354px;
     }
 
     @media screen and (min-width: $desktop) {
         width: 370px;
+        height: 370px;
     }
 }
 

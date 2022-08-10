@@ -63,9 +63,7 @@
 }
 
 .close-button__icon {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+    // position: absolute;
 
     height: 30px;
     width: 30px;
@@ -83,6 +81,10 @@
 }
 
 .close-button {
+    position: absolute;
+    top: 8px;
+    right: 38px;
+
     border: 0;
     cursor: pointer;
     margin: 0;

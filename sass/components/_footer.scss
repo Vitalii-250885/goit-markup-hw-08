@@ -55,3 +55,9 @@ address {
 .tel {
     margin-bottom: 0;
 }
+
+.footer__mobile-contacts {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+}

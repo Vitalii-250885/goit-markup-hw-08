@@ -18,6 +18,10 @@
     flex-wrap: wrap;
     justify-content:center;
     margin: -15px;
+
+    @media screen and (min-width: $desktop) {
+        margin: 0;
+    }
 }
 
 .regular-customer__link {
